@@ -1,0 +1,96 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header{
+  font-size: 2.5rem;
+  padding: 1rem;
+  background-color: grey;
+  color: white;
+  font-weight: 500;
+}
+
+section{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.hero-container{
+  height: 350px;
+  border-radius: 10px;
+  box-shadow: 1px 4px 5px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  margin: 2rem;
+  overflow: hidden;
+  position: relative;
+}
+
+
+.hero-img{
+  width: 100%;
+  height: 100%;
+}
+
+.overview{
+  background-color: rgb(95, 93, 93);
+  padding-left: .2rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform: translateX(-100%);
+  transition: transform 0.5s ease-in-out;
+  text-align: justify;
+  color: white;
+}
+
+
+.hero-container:hover .overview{
+  transform: translateX(0);
+  
+}
+
+.combat{
+  border-radius: 8px;
+  background-color: rgb(12, 12, 11);
+  color: white;
+}
+
+.durability{
+  border-radius: 8px;
+  background-color: rgb(5, 69, 99);
+  color: white;
+}
+
+.intel{
+  background-color: rgb(10, 10, 117);
+  border-radius: 8px;
+  color: white;
+}
+
+.power{
+  background-color: rgb(105, 6, 6);
+  border-radius: 8px;
+  color: white;
+}
+
+
+.speed{
+  background-color: rgb(187, 175, 8);
+  border-radius: 8px;
+  color: white;
+}
+
+
+.strength{
+  background-color: red;
+  border-radius: 8px;
+  color: white;
+  text-align: justify;
+}
+
+
